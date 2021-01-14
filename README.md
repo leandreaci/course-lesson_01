@@ -2,7 +2,7 @@
 
 ## run
 
-git clone https://github.com/leandreaci/lesson_01.git
+git clone https://github.com/leandreaci/course-lesson_01
 
 cd lesson_01 
 
