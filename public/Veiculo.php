@@ -3,11 +3,12 @@
 require_once 'database.php';
 require_once 'validacao.php';
 
-class Veiculo {
+class Veiculo
+{
 
     public function salvar()
     {
-        if(validar($_REQUEST))
+        if(validarVeiculo($_REQUEST))
         {
             echo salvarVeiculo($_REQUEST);
         }else{
