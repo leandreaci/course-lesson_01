@@ -19,5 +19,10 @@ class Request
     {
         return $this->fields;
     }
+
+    public function toJson()
+    {
+        return json_encode($this->fields);
+    }
     
 }
