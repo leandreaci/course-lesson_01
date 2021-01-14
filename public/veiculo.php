@@ -12,25 +12,35 @@
 
 <form action="/veiculo" method="post">
 
-    <input name="placa" />
-    <input name="modelo" />
-    <input name="ano" />
-    <button type="submit">Gravar</button>
+    <div class="">
+        <label>Placa</label>
+        <input name="placa"/>
+    </div>
+    <div class="">
+        <label>Modelo</label>
+        <input name="modelo"/>
+    </div>
+    <div class="">
+        <label>Ano</label>
+        <input name="ano"/>
+    </div>
 
+    <div class="">
+        <button type="submit">Gravar</button>
+    </div>
 </form>
 </body>
 </html>
 
 <?php
 
-    require_once 'Veiculo.php';
+require_once 'Veiculo.php';
 
-    // SE O FORMULARIO TIVER SIDO ENVIADO SALVA
-    if(count($_REQUEST))
-    {
-        $veiculo = new Veiculo();
-        $veiculo->salvar();
-    }else{
-        echo 'Digite alguma coisa';
-    }
+// SE O FORMULARIO TIVER SIDO ENVIADO SALVA
+if (count($_REQUEST)) {
+    $veiculo = new Veiculo();
+    $veiculo->salvar();
+} else {
+    echo 'Digite alguma coisa';
+}
 
