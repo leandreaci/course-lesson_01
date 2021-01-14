@@ -1,0 +1,9 @@
+version: '3'
+services:
+  crud:
+    build: .
+    container_name: crud
+    ports:
+    - 7000:80
+    volumes:
+    - .:/var/www/html
